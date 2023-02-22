@@ -1,8 +1,10 @@
-FROM node
+FROM node:14
 
-COPY package.
+COPY package.json .
 
 RUN npm install
+
+COPY . .
 
 EXPOSE 3000
 

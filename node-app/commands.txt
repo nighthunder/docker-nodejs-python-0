@@ -1,0 +1,2 @@
+# check use of port in windows
+netstat -na | Select-String "3000"  
